@@ -12,13 +12,16 @@ public class AssignmentJavaApplication {
 
 
 		// Q1
+		System.out.println("Question 1");
 		int[] Q1Ex1 = {7,1,5,3,6,4};
 		System.out.println(Q1(Q1Ex1));
 		int[] Q1Ex2 = {7,6,4,3,1};
 		System.out.println(Q1(Q1Ex2));
+		System.out.println("");
 		//
 
 		// Q2
+		System.out.println("Question 2");
 		String v1Q2Ex1 = "1.01";
 		String v2Q2Ex1 = "1.001";
 		System.out.println(Q2(v1Q2Ex1,v2Q2Ex1));
@@ -28,7 +31,16 @@ public class AssignmentJavaApplication {
 		String v1Q2Ex3 = "0.1";
 		String v2Q2Ex3 = "1.1";
 		System.out.println(Q2(v1Q2Ex3,v2Q2Ex3));
+		System.out.println("");
 		//
+
+		//Q3
+		System.out.println("Question 3");
+		int Q3Ex1 = 2;
+		System.out.println(Q3(Q3Ex1));
+		int Q3Ex2 = 3;
+		System.out.println(Q3(Q3Ex2));
+		System.out.println("");
 	}
 
 	public static int Q1(int[] in){
@@ -88,5 +100,20 @@ public class AssignmentJavaApplication {
 		}
 
 		return result;
+	}
+
+	public static int Q3(int n){
+
+		int one = 1;
+		int two = 1;
+
+		for(int i = 0 ; i < n-1 ;i++){
+
+			int temp = one;
+			one = one + two;
+			two = temp;
+		}
+
+		return one;
 	}
 }
