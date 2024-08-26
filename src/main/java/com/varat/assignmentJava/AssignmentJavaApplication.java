@@ -41,6 +41,12 @@ public class AssignmentJavaApplication {
 		int Q3Ex2 = 3;
 		System.out.println(Q3(Q3Ex2));
 		System.out.println("");
+
+		//Q4
+		System.out.println("Question 4");
+		System.out.println("4.1 : The hardest question is question 3 because the first solution that i think is DFS ,which has a time complexity of O(2^n). I believe this is not optimal.");
+		System.out.println("4.2 : The solution that i think is Bottom-up Approach in Dynamic Programming. ");
+		System.out.println("");
 	}
 
 	public static int Q1(int[] in){
